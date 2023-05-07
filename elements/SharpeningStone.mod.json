@@ -601,6 +601,24 @@
       },
       {
         "value": "Blocks.STONE_SLAB#6"
+      },
+      {
+        "value": "Blocks.ENCHANTING_TABLE"
+      },
+      {
+        "value": "Blocks.SMITHING_TABLE"
+      },
+      {
+        "value": "Blocks.ANVIL#0"
+      },
+      {
+        "value": "Blocks.ANVIL#1"
+      },
+      {
+        "value": "Blocks.ANVIL#2"
+      },
+      {
+        "value": "Blocks.GRINDSTONE"
       }
     ],
     "functions": [],
