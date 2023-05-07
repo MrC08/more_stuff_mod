@@ -33,13 +33,13 @@ public class RightClickBlockProcedure {
 		execute(event, event.getWorld(), event.getPos().getX(), event.getPos().getY(), event.getPos().getZ(), event.getWorld().getBlockState(event.getPos()), event.getPlayer());
 	}
 
-	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
-		execute(null, world, x, y, z, blockstate, entity);
+	public static boolean execute(LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+		return execute(null, world, x, y, z, blockstate, entity);
 	}
 
-	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
+	private static boolean execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate, Entity entity) {
 		if (entity == null)
-			return;
+			return false;
 		if (blockstate.is(BlockTags.create(new ResourceLocation("more_stuff:sharpening_stone")))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Blocks.BAMBOO.asItem()) {
 				((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).shrink(1);
@@ -55,7 +55,9 @@ public class RightClickBlockProcedure {
 						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grindstone.use")), SoundSource.PLAYERS, 1, (float) 1.5, false);
 					}
 				}
+				return false;
 			}
 		}
+		return true;
 	}
 }
