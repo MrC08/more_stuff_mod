@@ -571,54 +571,6 @@
       },
       {
         "value": "Blocks.PRISMARINE_WALL"
-      },
-      {
-        "value": "Blocks.END_PORTAL_FRAME"
-      },
-      {
-        "value": "Blocks.END_STONE"
-      },
-      {
-        "value": "Blocks.END_BRICKS"
-      },
-      {
-        "value": "Blocks.END_STONE_BRICK_STAIRS"
-      },
-      {
-        "value": "Blocks.END_STONE_BRICK_SLAB"
-      },
-      {
-        "value": "Blocks.END_STONE_BRICK_WALL"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK_STAIRS"
-      },
-      {
-        "value": "Blocks.NETHER_BRICK_FENCE"
-      },
-      {
-        "value": "Blocks.NETHER_WART_BLOCK"
-      },
-      {
-        "value": "Blocks.STONE_SLAB#6"
-      },
-      {
-        "value": "Blocks.ENCHANTING_TABLE"
-      },
-      {
-        "value": "Blocks.SMITHING_TABLE"
-      },
-      {
-        "value": "Blocks.ANVIL#0"
-      },
-      {
-        "value": "Blocks.ANVIL#1"
-      },
-      {
-        "value": "Blocks.ANVIL#2"
-      },
-      {
-        "value": "Blocks.GRINDSTONE"
       }
     ],
     "functions": [],
