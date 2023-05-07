@@ -1,42 +1,51 @@
 {
   "_fv": 39,
-  "_type": "item",
+  "_type": "rangeditem",
   "definition": {
     "renderType": 0,
     "texture": "bamboo_spear",
     "customModelName": "Normal",
     "name": "Bamboo Spear",
-    "rarity": "COMMON",
+    "specialInfo": [
+      "Works for borh melee and ranged combat"
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
-    "stackSize": 1,
-    "enchantability": 1,
-    "useDuration": 0,
-    "toolType": 1.0,
-    "damageCount": 0,
-    "recipeRemainder": {
+    "stackSize": 16,
+    "ammoItem": {
       "value": ""
     },
-    "destroyAnyBlock": false,
-    "immuneToFire": false,
-    "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "block.bamboo.hit"
+    },
+    "hasGlow": false,
+    "animation": "spear",
     "enableMeleeDamage": true,
     "damageVsEntity": 4.0,
-    "specialInfo": [],
-    "hasGlow": false,
-    "guiBoundTo": "<NONE>",
-    "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "isFood": false,
-    "nutritionalValue": 4,
-    "saturation": 0.3,
-    "eatResultItem": {
-      "value": ""
+    "onRangedItemUsed": {
+      "name": "BambooSpearRangedItemUsed"
     },
-    "isMeat": false,
-    "isAlwaysEdible": false,
-    "animation": "spear"
+    "bulletPower": 1.0,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:BambooSpear"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "BambooSpearHit"
+    },
+    "onBulletHitsPlayer": {
+      "name": "BambooSpearHit"
+    },
+    "onBulletHitsEntity": {
+      "name": "BambooSpearHit"
+    }
   }
 }

@@ -1,19 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "BambooSpear",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bamboo_spear",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/more_stuff/models/item/bamboo_spear.json",
-          "src/main/java/com/essorant/morestuff/item/BambooSpearItem.java"
-        ]
-      }
-    },
-    {
       "name": "SharpeningStone",
       "type": "tag",
       "compiles": true,
@@ -23,11 +10,13 @@
         "files": [
           "src/main/resources/data/more_stuff/tags/blocks/sharpening_stone.json"
         ]
-      }
+      },
+      "path": "~/Spears"
     },
     {
       "name": "RightClickBlock",
       "type": "procedure",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "right_click_block",
@@ -61,7 +50,79 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Spears"
+    },
+    {
+      "name": "BambooSpear",
+      "type": "rangeditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_spear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/more_stuff/models/item/bamboo_spear.json",
+          "src/main/java/com/essorant/morestuff/item/BambooSpearItem.java",
+          "src/main/java/com/essorant/morestuff/entity/BambooSpearEntity.java"
+        ]
+      },
+      "path": "~/Spears"
+    },
+    {
+      "name": "BambooSpearRangedItemUsed",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_spear_ranged_item_used",
+      "metadata": {
+        "files": [
+          "src/main/java/com/essorant/morestuff/procedures/BambooSpearRangedItemUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Spears"
+    },
+    {
+      "name": "BambooSpearHit",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_spear_hit",
+      "metadata": {
+        "files": [
+          "src/main/java/com/essorant/morestuff/procedures/BambooSpearHitProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spears"
     }
   ],
   "variable_elements": [],
@@ -73,7 +134,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Spears",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "more_stuff",
