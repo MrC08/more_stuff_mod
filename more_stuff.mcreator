@@ -101,8 +101,40 @@
         ],
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Spears"
+    },
+    {
+      "name": "BambooSpearExtOnDispenseAttemptWithResult",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_spear_ext_on_dispense_attempt_with_result",
+      "metadata": {
+        "files": [
+          "src/main/java/com/essorant/morestuff/procedures/BambooSpearExtOnDispenseAttemptWithResultProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
           },
           {
             "name": "x",
@@ -120,6 +152,19 @@
             "name": "world",
             "type": "world"
           }
+        ]
+      },
+      "path": "~/Spears"
+    },
+    {
+      "name": "BambooSpearExt",
+      "type": "itemextension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bamboo_spear_ext",
+      "metadata": {
+        "files": [
+          "src/main/java/com/essorant/morestuff/item/extension/BambooSpearExtItemExtension.java"
         ]
       },
       "path": "~/Spears"

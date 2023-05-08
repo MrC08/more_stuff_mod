@@ -43,7 +43,7 @@ public class BambooSpearItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Works for borh melee and ranged combat"));
+		list.add(new TextComponent("Works for both melee and ranged combat"));
 	}
 
 	@Override
@@ -75,7 +75,7 @@ public class BambooSpearItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				BambooSpearEntity entityarrow = BambooSpearEntity.shoot(world, entity, world.getRandom(), 1f, 2, 5);
+				BambooSpearEntity entityarrow = BambooSpearEntity.shoot(world, entity, world.getRandom(), 1f, 2, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 

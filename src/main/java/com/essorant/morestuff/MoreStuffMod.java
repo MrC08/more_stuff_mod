@@ -31,6 +31,7 @@ import java.util.function.Function;
 import java.util.function.BiConsumer;
 
 import com.essorant.morestuff.init.MoreStuffModItems;
+import com.essorant.morestuff.init.MoreStuffModEntities;
 
 @Mod("more_stuff")
 public class MoreStuffMod {
@@ -45,6 +46,7 @@ public class MoreStuffMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MoreStuffModItems.REGISTRY.register(bus);
+		MoreStuffModEntities.REGISTRY.register(bus);
 
 	}
 

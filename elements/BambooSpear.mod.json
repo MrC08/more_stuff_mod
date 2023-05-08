@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Bamboo Spear",
     "specialInfo": [
-      "Works for borh melee and ranged combat"
+      "Works for both melee and ranged combat"
     ],
     "creativeTab": {
       "value": "COMBAT"
@@ -30,7 +30,7 @@
     },
     "bulletPower": 1.0,
     "bulletDamage": 2.0,
-    "bulletKnockback": 5,
+    "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
@@ -39,12 +39,6 @@
     "bulletModel": "Default",
     "customBulletModelTexture": "",
     "onBulletHitsBlock": {
-      "name": "BambooSpearHit"
-    },
-    "onBulletHitsPlayer": {
-      "name": "BambooSpearHit"
-    },
-    "onBulletHitsEntity": {
       "name": "BambooSpearHit"
     }
   }
